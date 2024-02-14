@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            border: 1px solid #000;
+            padding: 16px;
+        }
+
+        .card_img {
+            width: 250px;
+            height: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="content">
+
+    </div>
+    <script src="data.js"></script>
+    <script>
+
+        const data = JSON.parse(dataInfo);
+        const contentEl = document.querySelector('.content')
+        data.forEach(el => {
+            console.log(el.title)
+        });
+
+        data.forEach(element => {
+            const cardEl = document.createElement('div')
+            cardEl.classList.add('card')
+
+            const imgEl = document.createElement('img')
+            imgEl.classList.add('card_img')
+            imgEl.setAttribute('alt', "картинка")
+            imgEl.src = element.thumbnail
+
+
+            const titleEl = document.createElement('a')
+            titleEl.classList.add('card_title')
+            titleEl.href = "#"
+            titleEl.textContent = element.title
+
+            const descEl = document.createElement('p')
+            descEl.classList.add('card_desc')
+            descEl.textContent = element.description
+
+            contentEl.appendChild(cardEl)
+            cardEl.appendChild(imgEl)
+            cardEl.appendChild(titleEl)
+            cardEl.appendChild(descEl)
+        });
+    </script>
+</body>
+
+</html>
