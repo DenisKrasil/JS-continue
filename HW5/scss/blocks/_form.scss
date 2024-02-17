@@ -1,0 +1,270 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        @include font(24px, 38px, 700);
+        text-align: center;
+        color: $blac-color;
+        text-transform: uppercase;
+
+        @include tablet{
+            @include font(18px ,29px, 400);
+        }
+
+        @include mobile{
+            @include font(24px, 37px, 700);
+        }
+    }
+    
+    &__text {
+        @include font(18px, 30px, 400);
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 32px;
+
+        @include tablet{
+            @include font(18px ,27px, 400);
+        }
+
+        @include mobile{
+            @include font(14px, 21px, 400);
+        }
+    }
+    &-registration {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-around;
+
+        @include tablet{
+            margin-top: 40px;
+        }
+
+        @include mobile{
+            margin-top: 40px;
+            flex-direction: column;
+        }
+    }
+    
+    &-registrtion__loyalty {
+        display: flex;
+        flex-direction: column;
+        max-width: 652px;
+        position: relative;
+
+        @include tablet{
+            max-width: 45%;
+        }
+
+        @include mobile{
+            max-width: 95%;
+            margin-bottom: 100px;
+        }
+    }
+    
+    &-registrtion__loyalty-title {
+        text-transform: uppercase;
+        @include font(24px, 29px, 300);
+
+        @include tablet{
+            @include font(16px, 19px, 300);
+        }
+
+        @include mobile{
+            @include font(16px, 19px, 300);
+        }
+    }
+    
+    &-registrtion__loyalty-text {
+        @include font(24px, 29px, 300);
+        margin-top: 16px;
+        position: relative;
+
+        @include tablet{
+            @include font(16px, 19px, 300);
+        }
+
+        @include mobile{
+            @include font(16px, 19px, 300);
+        }
+    }
+    &__subscribe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile{
+            width: 96%;
+        }
+    }
+    
+    &__subscribe-input{
+        min-height: 49px;
+        width: 355px;
+        padding-left: 22px;
+        background-color: $card-bkg;
+        border: none;
+        border-radius: 20px 0px 0px 20px;
+
+        @include mobile{
+            width: 240px;
+        }
+    }
+    
+    &__subscribe-button{
+        min-height: 49px;
+        min-width: 100px;
+        border: none;
+        background-color: $button-bkg;
+        text-transform: capitalize;
+        color: $white-color;
+        border-radius: 0px 20px 20px 0px;
+    }
+    
+    &__subscribe-button{
+        &:hover,
+        &:focus,
+        &:active{
+            cursor: pointer;
+            border: 1px solid $blue-border; 
+        }
+    }
+    
+    &__subscribe-input{
+        &:hover,
+        &:focus,
+        &:active{
+            border: 1px solid $blue-border;
+            cursor: pointer;
+        }
+    }
+    
+    &-registration__data{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &-registration__title{
+        @include font(16px, 19px, 300);
+        text-transform: capitalize;
+    }
+    
+    &-registration-indent{
+        margin-top: 33px;
+    }
+    
+    &-registration__input{
+        min-height: 45px;
+        width: 360px;
+        margin-top: 20px;
+        padding-left: 17px;
+        border: 1px solid $grey-color;
+
+        @include tablet{
+            max-width: 92%;
+        }
+
+        @include mobile{
+            max-width: 95%;
+        }
+    }
+    
+    &-registration__input{
+        &:hover,
+        &:focus,
+        &:active{
+        border-color: $blue-border;
+        cursor: pointer;
+        }
+    }
+    
+    &-registration__radio{
+        &:hover,
+        &:focus,
+        &:active{
+            cursor: pointer;
+        }  
+    }
+    &-registration__text{
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: $grey-color;
+        margin-top: 16px;
+        width: 360px;
+    }
+    
+    &__dilivery{
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+
+        @include tablet{
+            flex-wrap: wrap;
+            max-height: 350px;
+            margin-bottom: 128px;
+            width: 52%;
+        }
+
+        @include mobile{
+            flex-wrap: nowrap;
+            max-height: 500px;
+            width: 98%;
+        }
+    }
+    
+    &__dilivery-title{
+        margin-top: 40px;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    &__dilivery-input{
+        min-height: 45px;
+        width: 360px;
+        margin-top: 20px;
+        padding-left: 17px;
+        border: 1px solid $grey-color;
+
+        @include tablet{
+            width: 90%;
+        }
+    }
+    
+    &__dilivery-input{
+        &:hover,
+        &:focus,
+        &:active{
+            border-color: $blue-border;
+            cursor: pointer;
+        }
+    }
+    
+    &__dilivery-button{
+        margin-top: 23px;
+        min-height: 34px;
+        width: 100px;
+        border-color: $grey-color;
+        background-color: $white-color;
+        text-transform: capitalize;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        border-style: solid;
+    }
+    
+    &__dilivery-button{
+        &:hover,
+        &:focus,
+        &:active{
+            background-color: $button-bkg;
+            color: $white-color;
+            border: none;
+        }
+    }
+}
+
