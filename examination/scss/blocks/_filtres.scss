@@ -1,0 +1,110 @@
+.filtres {
+    margin-top: 39px;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+
+    &__filter {
+        width: 360px;
+        padding: 13px 16px 16px;
+
+        &[open] {
+            background: #FFFFFF;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        }
+
+        &[open] .filter__text {
+            color: $pink-color;
+        }
+
+        &[open] path {
+            fill: $pink-color;
+        }
+    }
+
+    &__filter__summary {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__filter__item {
+        margin-top: 16px;
+
+        &[open] .filter__heading__text {
+            color: $pink-color;
+        }
+    }
+
+    &__filter__head {
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid #EBEBEB;
+        border-left: 5px solid $pink-color;
+    }
+
+    &__filter__linkbox {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+
+    &__link__text {
+        color: #6F6E6E;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 1000;
+        line-height: normal;
+
+
+
+    }
+
+    &__sort {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+
+        &_text {
+            color: #6F6E6E;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @include mobile{
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__flex {
+        position: absolute;
+        left: 40px;
+        display: flex;
+        text-align: center;
+        gap: 200px;
+        margin-bottom: 64px;
+
+        @include mobile {
+            gap: 50px;
+            left: 0px;
+        }
+    }
+
+    &__text {
+        @include mobile {
+            display: none;
+        }
+    }
+
+
+}

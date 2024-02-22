@@ -1,0 +1,66 @@
+.inform{
+    background-image: url(../img/subscribe-bkg.png);
+    min-height: 448px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    @include tablet{
+        min-height: 693px;
+        background-position: left;
+
+    }
+
+    @include mobile{
+        min-height: 550px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__wrp {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: space-around;
+
+        @include tablet{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @include mobile{
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    
+    &__img {
+        margin-bottom: 30px;
+    }
+    
+    &__comment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 360px;
+
+        @include tablet{
+            margin-bottom: 60px;
+        }
+
+        @include mobile{
+            margin-bottom: 60px;
+        }
+    }
+    
+    &__text {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: $blac-color;
+    }
+}
+
+
