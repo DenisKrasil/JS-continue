@@ -1,0 +1,85 @@
+.products{
+    &__title {
+        text-align: center;
+        margin-top: 97px;
+        @include font(30px, 36px, 400);
+        text-transform: capitalize;
+
+        @include tablet{
+            margin-top: 155px;
+        }
+
+        @include mobile{
+            margin-top: 64px;
+        }
+    }
+    
+    &-sub-title {
+        text-align: center;
+        @include font(14px, 17px, 400);
+        color: $grey-color;
+    }
+    
+    &__list {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile{
+            flex-direction: column;
+        }
+    }
+    
+    &__item {
+        height: 581px;
+        width: 360px;
+        background-color: $card-bkg;
+        margin-top: 30px;
+    }
+    
+    &__item-button{
+        position: absolute;
+        padding: 9px 13px;
+        border: 1px solid $white-color;
+        color: $white-color;
+        @include font(14px, 17px, 400);
+        top: 30%;
+        left: 30%;
+        background-color: transparent;
+        display: none;
+    }
+    
+    &__item:hover &__item-button{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__item:hover .item-wrapper:before{
+        display: block;
+    }
+    
+    &__item-basket{
+        margin-right: 11px;
+    }
+    
+    &__item-title {
+        @include font(13px, 16px, 400);
+        text-transform: uppercase;
+        margin-top: 24px;
+    }
+    
+    &__item-text {
+        margin-top: 13px;
+        @include font(14px, 17px, 300);
+        color: $grey-color;
+    }
+    
+    &__item-price {
+        @include font(16px, 19px, 400);
+        margin-top: 18px;
+        color: $pink-color;
+    }
+    
+}

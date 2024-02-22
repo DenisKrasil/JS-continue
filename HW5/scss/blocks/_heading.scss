@@ -1,0 +1,17 @@
+.heading{
+    background-color: $pink-bkg;
+    height: 148px;
+
+    &__title{
+        text-transform: uppercase;
+        padding-top: 59px;
+        @include font(24px, 29px, 400);
+        color: $pink-color;
+
+        @include mobile{
+            text-align: center;
+        }
+    }
+}
+
+

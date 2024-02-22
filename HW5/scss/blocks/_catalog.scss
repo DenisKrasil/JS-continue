@@ -1,0 +1,41 @@
+.catalog {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+
+    &__link {
+        display: block;
+        align-items: center;
+        border: 1px solid $pink-color;
+        color: $pink-color;
+        padding: 14px 38px 13px 38px;
+        @include font(16px, 19px, 400);
+        text-decoration: none;
+    }
+    
+    &__link{
+        &:hover{
+            background-color: $pink-color;
+            color: $white-color;
+        }
+        &:focus{
+            background-color: $pink-color;
+            color: $white-color;
+        }
+    }
+
+    &__pagination{
+        margin-top: 48px;
+        margin-left: 37%;
+
+        @include tablet{
+            margin-left: 33%;
+        }
+
+        @include mobile{
+            margin-left: 25%;
+        }
+    }
+}
+
+
