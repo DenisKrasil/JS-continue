@@ -1,17 +1,17 @@
-.item-wrapper{
+.item-wrapper {
     position: relative;
 
-    &:before{
+
+    &:before {
         content: '';
         width: 100%;
         min-height: 420px;
         background: $dark_grey-bkg;
         position: absolute;
         top: 0;
-        }
-    
-    &:before{
+    }
+
+    &:before {
         display: none;
     }
 }
-
