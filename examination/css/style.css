@@ -1596,6 +1596,8 @@ main {
 .shop__cross {
   position: absolute;
   right: 22px;
+  width: 18px;
+  height: 18px;
 }
 @media (max-width: 767px) {
   .shop__cross {
@@ -1794,4 +1796,18 @@ main {
   .filtres__text {
     display: none;
   }
+}
+
+.cart-items {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.cart-items__title {
+  font-family: Lato;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

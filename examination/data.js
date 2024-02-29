@@ -4,6 +4,7 @@ const dataInfo = `[
         "title": "ellery x m'o capsule",
         "description": "known for her sculptural takes on traditional tailoring australian arbiter of cool kym ellery teams up with moda operandi",
         "price": "$52.00",
+        "color": "Black",
         "images": "img/brand-1.jpg" 
     },
     {
@@ -11,6 +12,7 @@ const dataInfo = `[
         "title": "ellery x m'o capsule",
         "description": "known for her sculptural takes on traditional tailoring australian arbiter of cool kym ellery teams up with moda operandi",
         "price": "$52.00",
+        "color": "Black",
         "images": "img/brand-2.jpg" 
     },
     {
@@ -18,6 +20,7 @@ const dataInfo = `[
         "title": "ellery x m'o capsule",
         "description": "known for her sculptural takes on traditional tailoring australian arbiter of cool kym ellery teams up with moda operandi",
         "price": "$52.00",
+        "color": "White",
         "images": "img/brand-3.jpg" 
     },
     {
@@ -25,6 +28,7 @@ const dataInfo = `[
         "title": "ellery x m'o capsule",
         "description": "known for her sculptural takes on traditional tailoring australian arbiter of cool kym ellery teams up with moda operandi",
         "price": "$52.00",
+        "color": "Blue",
         "images": "img/brand-4.jpg" 
     },
     {
@@ -32,6 +36,7 @@ const dataInfo = `[
         "title": "ellery x m'o capsule",
         "description": "known for her sculptural takes on traditional tailoring australian arbiter of cool kym ellery teams up with moda operandi",
         "price": "$52.00",
+        "color": "Blue",
         "images": "img/brand-5.jpg" 
     },
     {
@@ -39,6 +44,7 @@ const dataInfo = `[
         "title": "ellery x m'o capsule",
         "description": "known for her sculptural takes on traditional tailoring australian arbiter of cool kym ellery teams up with moda operandi",
         "price": "$52.00",
+        "color": "Green",
         "images": "img/brand-6.jpg" 
     }
 ]`
